@@ -28,6 +28,7 @@ export class HeroesComponent implements OnInit {
       .subscribe(heroes => this.heroes = heroes);
   }
   /* Original getHeroes function
+  //Assigns array of heroes to components heroes property. Does so synchronously, would cause browser to freeze waiting for server.
   getHeroes(): void {
     this.heroes = this.heroService.getHeroes();
   }
