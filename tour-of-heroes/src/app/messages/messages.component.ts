@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-messages',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessagesComponent implements OnInit {
 
-  constructor() { }
+  // messageService must be public to bind to a template
+  constructor(public messageService: MessageService) { }
 
   ngOnInit() {
   }
