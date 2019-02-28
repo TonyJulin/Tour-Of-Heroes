@@ -2,6 +2,8 @@
 <div style="text-align:center">
   <h1>
     {{ title }}!
-    <app-heroes></app-heroes>
+    <!-- Only display heroes component when navigated to
+         router-outlet tells router where to display routed views -->
+    <router-outlet></router-outlet>
   </h1>
 
