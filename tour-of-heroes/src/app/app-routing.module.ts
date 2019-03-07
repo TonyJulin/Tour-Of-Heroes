@@ -9,6 +9,7 @@ const routes: Routes = [
 
 @NgModule({
   exports: [ RouterModule ],
+  // Configure router at app root level
   imports: [ RouterModule.forRoot(routes)]
 })
 export class AppRoutingModule { }
